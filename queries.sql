@@ -87,7 +87,6 @@ FROM conge
 JOIN badgeage ON badgeage.employe_id = conge.employe_id
 JOIN employe ON employe.id = conge.employe_id
 WHERE DATE(horodatage) BETWEEN conge.date_debut AND conge.date_fin;
---Benali Nadia n'était pas censée être là puisqu'elle était en CP
 
 
 -- 11. Le badge a aussi servi à la machine à café ces soirs-là. Prouve-le.
@@ -95,7 +94,8 @@ SELECT conge.employe_id, employe.nom, employe.prenom,
 	conge.date_debut AS debut_conge,
 	conge.date_fin AS fin_conge,
 	conge.type,
-	transaction_cafe.horodatage AS prise_boisson
+	transaction_cafe.horodatage AS prise_boisson,
+	transaction_cafe.boisson
 FROM conge
 JOIN transaction_cafe ON transaction_cafe.employe_id = conge.employe_id
 JOIN employe ON employe.id = conge.employe_id
