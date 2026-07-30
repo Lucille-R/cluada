@@ -46,3 +46,10 @@ Enfin, la requête "13" nous a permis de constater que cet employé (Julien Webe
 
 ## Conclusion
 Ces observations amènent à recommander un rappel auprès des employés sur le caractère strictement personnel du badge, quel que soit son usage (accès aux locaux, machine à café).
+
+# EXTENSION
+## Schéma entité-association
+Cardinalités :  
+VISITEUR --(1,N)-- recevoir --(0,N)-- EMPLOYE  
+Un visiteur est reçu 1 ou plusieurs fois (N).  
+Un employé peut ne jamais recevoir de visiteur (0), recevoir plusieurs visites (N).
