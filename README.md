@@ -40,9 +40,9 @@ docker compose down
 - [x] Partie 1 : Audit
 - [x] Partie 2 : Exploration des données
 - [ ] Partie 3 : Extension
-  - [ ] schéma entité-association
-  - [ ] Migration Up
-  - [ ] Migration Down
+  - [x] schéma entité-association
+  - [x] Migration Up
+  - [x] Migration Down
   - [ ] Seed
   - [ ] requêtes de vérification
 - [ ] Bonus
