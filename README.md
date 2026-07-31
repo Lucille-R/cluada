@@ -39,12 +39,12 @@ docker compose down
 
 - [x] Partie 1 : Audit
 - [x] Partie 2 : Exploration des données
-- [ ] Partie 3 : Extension
+- [x] Partie 3 : Extension
   - [x] schéma entité-association
   - [x] Migration Up
   - [x] Migration Down
-  - [ ] Seed
-  - [ ] requêtes de vérification
+  - [x] Seed
+  - [x] requêtes de vérification
 - [ ] Bonus
 
 ## compétences
@@ -53,5 +53,5 @@ docker compose down
 - [x] Je sais écrire des requêtes SELECT avec différents filtres
 - [x] Je sais utiliser les jointures SQL, y compris entre 3 tables
 - [x] Je sais utiliser GROUP BY et HAVING pour détecter des anomalies
-- [ ] Je sais créer des tables SQL avec contraintes, clés étrangères et enum
-- [ ] Je sais insérer des données cohérentes dans une base existante
+- [x] Je sais créer des tables SQL avec contraintes, clés étrangères et enum
+- [x] Je sais insérer des données cohérentes dans une base existante
