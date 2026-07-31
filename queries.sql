@@ -117,3 +117,24 @@ FROM badgeage
 JOIN employe ON badgeage.employe_id = employe.id
 WHERE employe_id = 16
 	AND DATE(horodatage) BETWEEN TO_DATE('2026-06-16', 'YYYY-MM-DD') AND TO_DATE('2026-06-18', 'YYYY-MM-DD');
+
+
+
+-- PHASE 3 : requêtes de vérification sur tables 'visiteur' et 'reception'
+-- les visites avec le nom du/de la visiteur·se ET de l'employé·e qui reçoit :
+SELECT reception.date AS date_visite,
+	visiteur.nom AS nom_visiteur,
+	visiteur.prenom AS prenom_visiteur,
+	reception.motif AS motif_visite,
+	employe.nom AS nom_employe
+FROM reception
+JOIN visiteur ON reception.visiteur_id = visiteur.id
+JOIN employe ON reception.employe_id = employe.id;
+
+
+-- le nombre de visites reçues par employé·e :
+SELECT employe.nom AS nom_employe,
+	COUNT(reception.id)
+FROM reception
+JOIN employe ON reception.employe_id = employe.id
+GROUP BY employe.nom;
