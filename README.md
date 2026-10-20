@@ -1,6 +1,21 @@
-# Cluada
+# 🔍 Cluada
 
-## Structure du projet
+Audit SQL des usages d'un bâtiment de bureaux, à partir des traces de badgeage.
+
+## 📝 Description
+*Exercice réalisé dans le cadre de la formation Concepteur Développeur d'Applications à Ada Tech School.*
+
+Adakor est une société de conseil fictive de 35 salarié·e·s, dont l'immeuble fonctionne entièrement au badge nominatif : portes, parking et machine à café. Sa direction commande un état des lieux chiffré des 8 dernières semaines.
+
+J'ai mené l'audit uniquement en SQL, d'abord avec des requêtes d'état des lieux, puis en croisant les données pour expliquer les anomalies. L'enquête a mis en évidence un badge utilisé le soir, par une autre personne, pendant les congés de sa titulaire. Le rapport complet est dans [`rapport.md`](rapport.md).
+
+Dans un second temps, j'ai fait évoluer la base pour enregistrer les visiteurs : schéma entité-association, migrations, jeu de données et requêtes de vérification.
+
+## 🛠️ Technologies utilisées
+- PostgreSQL / SQL
+- Docker
+
+## 📂 Structure du projet
 
 ```text
 - cluada
@@ -15,7 +30,7 @@
     └── seed.sql
 ```
 
-## Utiliser le projet
+## 🚀 Utiliser le projet
 
 ### Lancer le projet
 
@@ -35,7 +50,7 @@ docker exec -it adakor-db psql -U ada -d adakor
 docker compose down
 ```
 
-## Avancé dans le projet
+## ✅ Avancement du projet
 
 - [x] Partie 1 : Audit
 - [x] Partie 2 : Exploration des données
@@ -45,13 +60,20 @@ docker compose down
   - [x] Migration Down
   - [x] Seed
   - [x] requêtes de vérification
-- [ ] Bonus
 
-## compétences
+## 🎯 Compétences mises en oeuvre
 
-- [x] Je sais lire un schéma entité-association et le schéma relationnel qui en découle
-- [x] Je sais écrire des requêtes SELECT avec différents filtres
-- [x] Je sais utiliser les jointures SQL, y compris entre 3 tables
-- [x] Je sais utiliser GROUP BY et HAVING pour détecter des anomalies
-- [x] Je sais créer des tables SQL avec contraintes, clés étrangères et enum
-- [x] Je sais insérer des données cohérentes dans une base existante
+- Lecture d'un schéma entité-association et du schéma relationnel qui en découle
+- Requêtes SELECT avec différents filtres, tris et agrégations
+- Jointures SQL, y compris entre 3 tables
+- Détecter des anomalies avec GROUP BY et HAVING
+- Création de tables avec contraintes, clés étrangères et types ENUM
+- Insertion de données cohérentes dans une base existante
+
+## 👤 Auteure
+
+- **Lucille Richard** - Étudiante chez Ada Tech School
+
+## 📄 Licence
+
+Projet réalisé dans un cadre pédagogique - Ada Tech School.
