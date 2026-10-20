@@ -66,7 +66,7 @@ docker compose down
 - Lecture d'un schéma entité-association et du schéma relationnel qui en découle
 - Requêtes SELECT avec différents filtres, tris et agrégations
 - Jointures SQL, y compris entre 3 tables
-- Détecter des anomalies avec GROUP BY et HAVING
+- Détection des anomalies avec GROUP BY et HAVING
 - Création de tables avec contraintes, clés étrangères et types ENUM
 - Insertion de données cohérentes dans une base existante
 
